@@ -1,6 +1,4 @@
-// import login from '../actions/loginAction'
-// import axios from 'axios';
-import { SUCCESS, ERROR, LOGIN } from '../actions/actionType'
+import { SUCCESS, ERROR, LOADING } from '../actions/actionType'
 
 const initialState = {
   user: {},
@@ -10,7 +8,7 @@ const initialState = {
 }
 export default function loginReducer(state = initialState, action) {
   switch (action.type) {
-    case LOGIN:
+    case LOADING:
       return {
         ...state,
         loading: true,
